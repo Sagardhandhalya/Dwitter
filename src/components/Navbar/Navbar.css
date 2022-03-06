@@ -1,0 +1,32 @@
+.navbar__container {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.left {
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.left li a {
+  color: rgb(151, 172, 229);
+  text-decoration: none;
+}
+
+.right {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+.right p {
+  margin-right: 10px;
+}

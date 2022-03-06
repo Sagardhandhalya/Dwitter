@@ -1,0 +1,38 @@
+.form_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.form_container form {
+  width: 80%;
+  height: 80%;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.form_container form textarea {
+  background-color: transparent;
+  height: 70%;
+  border: none;
+  outline: none;
+  padding: 3%;
+  font-family: inherit;
+  font-size: large;
+  resize: none;
+}
+.bottom {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bottom .btn {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: rgb(85, 85, 233);
+  min-width: 70px;
+  margin-right: 20px;
+  cursor: pointer;
+}

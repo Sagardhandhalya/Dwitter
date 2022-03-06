@@ -1,0 +1,26 @@
+.snackbar {
+  position: fixed;
+  bottom: 3px;
+  right: 10px;
+  background-color: red;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  min-width: 200px;
+}
+
+.btn {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: rgb(85, 85, 233);
+  min-width: 70px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
