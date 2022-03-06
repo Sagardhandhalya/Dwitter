@@ -15,32 +15,6 @@
   align-items: center;
 }
 
-.card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  background-color: aliceblue;
-}
-.post_content {
-  padding: 20px 40px;
-}
-.bottom_bar button {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.bottom_bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  background-color: aliceblue;
-}
-.tips {
-  color: rgb(85, 85, 233);
-}
-
 .header_sort {
   display: flex;
   justify-content: space-between;

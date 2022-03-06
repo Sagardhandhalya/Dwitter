@@ -1,7 +1,6 @@
 import React from "react";
-import Avatar from "../Avatar/Avatar";
 import "./AllPost.css";
-import donateIcon from "./../../donate.svg";
+import PostCard from "../PostCard/PostCard";
 const AllPost = ({ posts, tipPost, instance }) => {
   return (
     <div className="main__container">
@@ -11,46 +10,21 @@ const AllPost = ({ posts, tipPost, instance }) => {
           <label>Sort By </label>
           <select>
             <option value="Tips">Popular</option>
-            <option value="old">oldest</option>
-            <option value="new">letest</option>
+            <option value="old">Oldest</option>
+            <option value="new">Letest</option>
+            <option value="mypost">My Post</option>
           </select>
         </div>
       </div>
       <div className="cards">
-        {posts.map((post, key) => {
-          return (
-            <div className="card" key={key}>
-              <div className="card-header">
-                <Avatar account={post.author} />
-                <small className="text-muted">{post.author}</small>
-              </div>
-              <div className="post_content">
-                <p>{post.content}</p>
-              </div>
-              <div className="bottom_bar">
-                <b>
-                  {" "}
-                  <small className="tips">
-                    TIPS:{" "}
-                    {instance.utils.fromWei(post.tipAmount.toString(), "Ether")}
-                    ETH
-                  </small>
-                </b>
-                <button
-                  className="btn"
-                  name={post.id}
-                  onClick={(event) => {
-                    let tipAmount = instance.utils.toWei("0.1", "Ether");
-                    console.log(tipAmount);
-                    tipPost(event.target.name, tipAmount);
-                  }}
-                >
-                  <img src={donateIcon} className="donate" /> TIP 0.1 ETH
-                </button>
-              </div>
-            </div>
-          );
-        })}
+        {posts.map((post, key) => (
+          <PostCard
+            instance={instance}
+            key={post.id}
+            post={post}
+            tipPost={tipPost}
+          />
+        ))}
       </div>
     </div>
   );
