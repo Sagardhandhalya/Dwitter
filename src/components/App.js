@@ -5,7 +5,7 @@ import "./style.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import CreatePost from "./CreatePost/CreatePost";
 import AllPost from "./AllPost/AllPost";
-import MyPost from "./MyPost/MyPost";
+// import MyPost from "./MyPost/MyPost";
 import Navbar from "./Navbar/Navbar";
 
 const App = () => {
@@ -129,9 +129,6 @@ const App = () => {
         <Switch>
           <Route path="/create">
             <CreatePost createPost={createPost} />
-          </Route>
-          <Route path="/mypost">
-            <MyPost posts={posts} />
           </Route>
           <Route path="/" exact>
             <AllPost posts={posts} tipPost={tipPost} instance={web3Instance} />
